@@ -1,0 +1,51 @@
+<!-- HTML structure for the todo list application -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My To-Do List</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- create a container for the todo lsit -->
+    
+        <div id="todo-container">
+            <!-- todo list header-->
+             <div id="header">
+                <h1>To Do list</h1>
+             </div>
+
+             <!-- create input box!-->
+              <div id="todo-form">
+                <input
+                type="text"
+                class="input_item"
+                name="input_box"
+                id="input-box" 
+                placeholder="Add To-Do Items"  
+                />
+                
+                <!--add button-->
+                <button id="input-button" onclick="addTask()">Add</button>
+                </div>
+
+                <!-- task list-->
+                <h2>Task List</h2>
+                <ul id="list-container"></ul>
+                </div>
+
+                <script type="text/javascript" src="script.js"></script>
+                </body>
+                </html>
+
+<hr />
+<!-- task list counter-->
+ <div class="counter-comtainer">
+<div id="task-counters">
+    Completed: <span id="completed-counter">0</span> 
+    | Uncompleted:
+    <span id="uncompleted-counter">0</span>
+    </div>
+    </div>
